@@ -1,0 +1,23 @@
+{{>partials/header}}
+
+
+{{#type}}
+  <section class="banner" style="background-image: url('images/{{banner.image}}.jpg')">Todos os {{banner.text}}</section>
+{{/type}}
+{{^type}}
+  <section class="banner" style="background-image: url('images/allanimals.jpg')">Todos os animais</section>
+{{/type}}
+<h2>Todos os animais disponíveis para adoção</h2>
+
+<div class="container list">
+  {{#list}}
+    <div class="item">
+        <img src="images/{{image}}" class="item--image" />
+        <div class="item--name">{{name}}</div>
+        <div class="item--color">Cor: {{color}}</div>
+        <div class="item--genre">Gênero: {{sex}}</div>
+    </div>
+  {{/list}}
+</div>
+
+{{>partials/footer}}

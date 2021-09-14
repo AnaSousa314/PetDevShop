@@ -18,7 +18,7 @@ server.use(express.urlencoded({extended:true}));
 server.use(router);
 
 server.use((req,res)=>{
-  res.status(404).send('Página não encontrada')
+  res.render('pages/notFound');
 });
 
 

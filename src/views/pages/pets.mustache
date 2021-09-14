@@ -1,13 +1,11 @@
 {{>partials/header}}
 
 
-{{#type}}
-  <section class="banner" style="background-image: url('images/{{banner.image}}.jpg')">Todos os {{banner.text}}</section>
-{{/type}}
-{{^type}}
-  <section class="banner" style="background-image: url('images/allanimals.jpg')">Todos os animais</section>
-{{/type}}
-<h2>Todos os animais disponíveis para adoção</h2>
+{{#banner}}
+  <section class="banner" style="background-image: url('images/{{banner.image}}.jpg')">{{banner.text}}</section>
+  <h2>{{banner.text}} disponíveis para adoção</h2>
+{{/banner}}
+
 
 <div class="container list">
   {{#list}}
@@ -19,5 +17,10 @@
     </div>
   {{/list}}
 </div>
+{{^list}}
+  <div class="container no-list">
+   <h2>Não existe animais disponíveis nessas condições.</h2> 
+  </div>
+{{/list}}
 
 {{>partials/footer}}

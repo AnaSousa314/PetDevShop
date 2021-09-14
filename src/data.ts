@@ -1,11 +1,20 @@
-export const pets = [
+type PetType = 'dog'|'cat'|'fish'
+
+type Pets={
+    type: PetType
+    image:string
+    name:string
+    color:string
+    sex:string
+  }
+
+export const pets:Pets[] = [
     {
         "type": "dog",
         "image": "pastor-alemao.jpg",
         "name": "Pastor-alemão",
         "color": "Amarelo e Preto",
         "sex": "Masculino",
-        "active":"active" 
     },
     {
        "type": "dog",
@@ -13,7 +22,6 @@ export const pets = [
        "name": "Labrador-retriever",
         "color": "Branco",
         "sex": "Masculino",
-        "active":"active" 
     },
     {
         "type": "dog",
@@ -21,7 +29,6 @@ export const pets = [
         "name": "Zwergspitz",
         "color": "Amarelo",
         "sex": "Feminino",
-        "active":"active" 
     },
     {
         "type": "dog",
@@ -29,7 +36,6 @@ export const pets = [
         "name": "Husky Siberiano",
         "color": "Branco e Preto",
         "sex": "Masculino",
-        "active":"active" 
     },
     {
         "type": "dog",
@@ -37,7 +43,6 @@ export const pets = [
         "name": "Golden Retriever",
         "color": "Amarelo",
         "sex": "Masculino",
-        "active":"active" 
     },
     {
         "type": "dog",
@@ -45,7 +50,6 @@ export const pets = [
         "name": "Poodle",
         "color": "Branco",
         "sex": "Feminino",
-        "active":"active" 
     },
     {
         "type": "dog",
@@ -53,7 +57,6 @@ export const pets = [
         "name": "Bulldog",
         "color": "Branco e Amarelo",
         "sex": "Masculino",
-        "active":"active" 
     },
     {
         "type": "cat",
@@ -61,7 +64,6 @@ export const pets = [
         "name": "Persa",
         "color": "Amarelo",
         "sex": "Masculino",
-        "active":"active" 
     },
     {
         "type": "cat",
@@ -69,7 +71,6 @@ export const pets = [
         "name": "Maine Coon",
         "color": "Preto e Branco",
         "sex": "Masculino",
-        "active":"active" 
     },
     {
         "type": "cat",
@@ -77,7 +78,6 @@ export const pets = [
         "name": "Bengal",
         "color": "Branco, Preto e Amarelo",
         "sex": "Feminino",
-        "active":"active" 
     },
     {
         "type": "cat",
@@ -85,7 +85,6 @@ export const pets = [
         "name": "Siamês",
         "color": "Amarelo e Preto",
         "sex": "Masculino",
-        "active":"active" 
     },
     {
         "type": "cat",
@@ -93,7 +92,6 @@ export const pets = [
         "name": "Sphynx",
         "color": "Branco",
         "sex": "Masculino",
-        "active":"active" 
     },
     {
         "type": "fish",
@@ -115,7 +113,6 @@ export const pets = [
         "name": "Limpa Vidro",
         "color": "Verde e Branco",
         "sex": "Masculino",
-        "active":"active" 
     },
     {
         "type": "fish",
@@ -123,7 +120,6 @@ export const pets = [
         "name": "Tanictis",
         "color": "Vermelho",
         "sex": "Masculino",
-        "active":"active" 
     },
     {
         "type": "fish",
@@ -131,6 +127,5 @@ export const pets = [
         "name": "Acará Bandeira",
         "color": "Preto",
         "sex": "Masculino",
-        "active":"active" 
     }
 ]

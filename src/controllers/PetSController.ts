@@ -5,7 +5,12 @@ export const PetsController={
   home(req:Request,res:Response){    
     const list = PetModel.getAll();
 
-    res.render('pages/pets',{list});
+    let banner = {
+      image: 'allanimals',
+      text: 'Todos os animais'
+    }
+    
+    res.render('pages/pets',{list,banner});
   },
 
   dogs(req:Request,res:Response){
@@ -13,7 +18,7 @@ export const PetsController={
     
     let banner = {
       image: 'banner_dog',
-      text: 'cachorros'
+      text: 'Cachorros'
     }
      
     let type = true;
@@ -27,7 +32,7 @@ export const PetsController={
 
     let banner = {
       image: 'banner_cat',
-      text: 'gatos'
+      text: 'Gatos'
     }
 
     let type = true;
@@ -44,7 +49,7 @@ export const PetsController={
 
     let banner = {
       image: 'banner_fish',
-      text: 'peixes'
+      text: 'Peixes'
     }
 
     let type = true;

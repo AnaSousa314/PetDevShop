@@ -6,7 +6,12 @@ export const SearchController = {
     const busca:string = req.query.q as string;
 
     let list = PetModel.getSearch(busca.toUpperCase());
+
     let search
+
+    if(!busca){
+      return res.redirect('/')
+    }
 
     if(busca){
       search = true;

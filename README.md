@@ -21,7 +21,7 @@ Desafio proposto no segundo módulo do curso Node + TypeScript.
 <hr/>
 
 ## PetDevShop  
-Acesse o projeto no link <a href="https://petdevshop.herokuapp.com">PetDevShop</a>
+Acesse o projeto no link <a href="https://petdevshop.herokuapp.com" target="_blank" rel="noopen noreferrer" >PetDevShop</a>
 <br>
 <br>
 <img src="./public/video/PetDevShop.gif">

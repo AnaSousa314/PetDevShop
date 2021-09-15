@@ -38,8 +38,6 @@ export const PetsController={
     let type = true;
 
     let active2 = PetModel.getActive('cat')
-    
-    console.log(active2)
      
     res.render('pages/pets',{list,type,banner,active2});
   },

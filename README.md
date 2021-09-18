@@ -1,6 +1,6 @@
 # Projeto PetDevShop  
 
-Desafio proposto no segundo módulo do curso Node + TypeScript.
+Desafio proposto no segundo módulo do curso Node + TypeScript, com foco no Backend da aplicação.
 
 ## Pré-requisitos  
 `npm install nodemon typescript ts-node`
